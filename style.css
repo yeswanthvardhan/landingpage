@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: monospace;
+}
+.coffee{
+    height: 200vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(phone.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    padding: 65px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+  font-size: 35px;
+  text-decoration: inherit;
+  color: #e45826;
+  left:100;
+  padding: 20px;
+}
+.aishu{
+  padding-right : 100px;
+}
+.navbar ul{
+    list-style: circle;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: circle;
+    margin:0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: underline;
+    color: #h65477;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 16px;
+}
+.navbar ul li :: after{
+    content: "";
+    height: 15px;
+    width: 0;
+    background-color: yellow;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover::after{
+  width: 100%;
+}
+.coffeeshop{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: pink;
+}
+.coffeeshop h3{
+    font-size: 70px;
+    margin-top: 100px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+.coffeeshop p{
+    font-weight: 300;
+    margin: 20px 0;
+    line-height: 25px;
+    font-size: 30px;
+    color: #f34567;
+    font-style: oblique;
+}
+span{
+  background: #b29256;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.pictures{
+  position: absolute;
+  border: 10%;
+  top: 60%;
+  right: 35%
+}
